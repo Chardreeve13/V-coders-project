@@ -1,6 +1,8 @@
 @import './common';
 @import './catalog';
 
+
+
 :root{
  --black:#141414;
  --lightblack: rgba(20, 20, 20, 0.50);
@@ -26,6 +28,12 @@ p{
 img{
     max-width: 100%;
     height: auto;
+}
+button{
+    border:unset;
+    font-family:inherit;
+    cursor:pointer;
+    outline:none;
 }
 
 
