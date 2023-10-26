@@ -160,6 +160,8 @@
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
+        
+
     }   
 
     .popup{
@@ -172,12 +174,17 @@
         padding: 20px 30px;
         background-color: var(--white);
         border-radius: 8px;
+        transition: top 0ms ease-in-out 200ms,
+                    opacity 200ms ease-in-out 0ms,
+                    transform 20ms ease-in-out 0ms;
     }
     .popup.active{
         top: 50%;
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
-
+        transition: top 0ms ease-in-out 200ms,
+                    opacity 200ms ease-in-out 0ms,
+                    transform 20ms ease-in-out 0ms;
 
     }
 
