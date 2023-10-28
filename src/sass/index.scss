@@ -1,14 +1,22 @@
-@import './common';
 @import './catalog';
+@import './common';
 
 
 
 :root{
- --black:#141414;
- --lightblack: rgba(20, 20, 20, 0.50);
- --white: #fff;
- --dark-green: #1E2827;
- --figcaption: rgba(255, 255, 255, 0.50);
+    --iris: #4d5ae5;
+    --navyblue: #2E2F42;
+    --ocean: #404bbf;
+    --white: #ffffff;
+    --slate: #434455;
+    --cornflower: #e7e9fc;
+    --cloud: #f4f4fd;
+    --green: #31d0aa;
+    --lightslate: #8e8f99;
+    --navybluemodal: #2e2f42;
+    --grey: #2e2f42;
+    --dairy: #fcfcfc;
+    --black: #000000;
  
 }
 body{
