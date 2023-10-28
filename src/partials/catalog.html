@@ -1,5 +1,5 @@
 <div class="catalog-section">
-<h2 class="catalog-title">Catalog</h2>
+    <h2 class="catalog-title">Catalog</h2>
     <ul class="catalog-list list">
         <li class="catalog-item">
             <figure class="catalog-figure">
@@ -279,85 +279,43 @@
                 <div class="catalog-caption">
                     <h3 class="content">Armani Exchange</h3>
                     <p>&euro;400</p>
-        </div>
-    </li>
-</ul>
-<div class="button-container">
-    <button class="button-catalog" type="button" data-modal-open>BUY NOW</button>
+                </div>
+        </li>
+    </ul>
+   <!-- button -->
+        <div class="catalog-btn-container">
+        <button class="button-catalog" type="button" data-modal-open>BUY NOW</button>
+        </div>    
+</div>
+    
     <div class="modal is-hidden" data-modal>
         <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>
-            <img class="modal-close-icon" width="8" height="8">
-                <use href="../images/catalog/x.jpg"></use>
-        </img>
+        <button class="modal-close" type="button" data-modal-close>&times;</button>
         
-        </button>
-        <p class="modal-header-text">
-            Leave your contacts and we will call you back
-        </p>
         <form class="modal-signup-form" name="signup-form" autocomplete="on">
             <label class="modal-form-label" for="full-name">
                 <span class="form-label-text">Name</span>
-                <input class="form-label-input" type="text" id="full-name">
-                <!-- <svg class="form-input-icon" width="18" height="18">
-                    <use href="./images/images-main/icons.svg#person"></use>
-                </svg> -->
+                <input class="form-label-input" type="text" id="full-name" placeholder="Enter your full name">
             </label>
 
             <label class="modal-form-label">
                 <span class="form-label-text">Email</span>
-                <input class="form-label-input" type="email" id="email-address">
-                <!-- <svg class="form-input-icon" width="18" height="18">
-                    <use href="./images/images-main/icons.svg#email"></use>
-                </svg> -->
+                <input class="form-label-input" type="email" id="email-address" placeholder="Enter your email">
             </label>
 
             <label class="modal-form-label" for="card-number">
                 <span class="form-label-text">Card Number</span>
-                <input class="form-label-input" type="text" id="card-number">
-                <!-- <svg class="form-input-icon" width="18" height="24">
-                    <use href="./images/images-main/icons.svg#phone"></use>
-                </svg> -->
+                <input class="form-label-input" type="text" id="card-number" placeholder="Enter card">
             </label>
 
             <label class="modal-form-textarea">
                 <span class="form-label-text">Comment</span>
                 <textarea name="comment" class="form-label-textarea" placeholder="Text input" rows="6"></textarea>
             </label>
-
-            <label class="modal-form-aggreement">
-                <input class="modal-form-checkbox visually-hidden" type="checkbox" value="agree" name="agreement" required>
-                <!-- <svg class="modal-checkbox-icon" width="16" height="16">
-                    <use href="./images/images-main/icons.svg#checkbox"></use>
-                </svg> -->
-                <span class="modal-form-agreement-text">
-                    I accept the term and conditions of the <a href="#" class="form-agreement-link">Privacy Policy</a>
-                </span>
-            </label>
-            <button class="modal-form-button" type="submit">Send</button>
+        
+            <button class="modal-form-button" type="submit">Submit</button>
         </form>
         </div>
     </div>
-    <!-- <div class="popup">
-       <div class="close-btn">&times;</div>
-       <div class="form"></div>
-       <div class="form-element">
-        <label for="fullname">Full Name</label>
-        <input type="text" id="fullname" placeholder="Enter Full Name">
-       </div>
-       <div class="form-element">
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Enter your Email">
-       </div>
-       <div class="form-element">
-        <label for="cardnumber">Email</label>
-        <input type="text" id="cardnumber" placeholder="Enter card">
-       </div>
-       <div class="form-element">
-        <label for="comments">Email</label>
-        <input type="text" id="comments" placeholder="Enter your text">
-       </div>
-        
-    </div>
-</div> -->
-<script src="../sass/modal.js"></script>
+
+<script src="./modal.js"></script>
