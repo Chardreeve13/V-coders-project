@@ -287,11 +287,14 @@
         <button class="button-catalog" type="button" data-modal-open>BUY NOW</button>
         </div>    
 </div>
-        
-        <div class="modal">
-
-            <div class="modal" data-modal>
-
+    
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-close-icon" width="10" height="10">
+                    <use href="./images/catalog/icons.svg#modal-close"></use>
+                </svg>
+            </button>
                 <div class="modal-catalog-item">
                     <figure class="modal-catalog-figure">
                         <img src="./images/catalog/tubewatch.jpg" alt="watch" width="276" height="274">
@@ -301,10 +304,8 @@
                             <p>&euro;395</p>
                         </div>
                 </div>   
-
-        <button class="modal-close" type="button" data-modal-close>&times;</button>
         
-        <form class="modal-signup-form" name="signup-form" autocomplete="on">
+            <form class="modal-signup-form" name="signup-form" autocomplete="on">
             <label class="modal-form-label" for="full-name">
                 <span class="form-label-text">Full Name</span>
                 <input class="form-label-input" type="text" id="full-name" placeholder="Enter your full name">
@@ -331,8 +332,7 @@
             <span class="button-description">By clicking on “Submit” button, you agree to our Privacy Policy, 
                 <br>and allow Promodo to use this information for marketing purposes.</span>
             </label>
-        </form>
+            </form>
+            </div>
         </div>
-    </div>
-
 <script src="./modal.js"></script>
